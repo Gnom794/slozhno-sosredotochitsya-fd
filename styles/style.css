@@ -1,5 +1,250 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+.header {
+  padding-bottom: 105px;
+  background-image: var(--bg-image);
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border-top: 1px solid #FF0070;
+  border-right: 1px solid #FF0070;
+  position: absolute;
+  inset-inline-end: 0px;
+}
+
+.decorated-zone::after {
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border-bottom: 1px solid #FF0070;
+  border-left: 1px solid #FF0070;
+  position: absolute;
+  inset-block-end: 10px;
+}
+
+.header__rec {
+  text-align: end;
+  margin-right: 28px;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--nav-color);
+}
+
+.header__rec::after {
+  content: '';
+  background: var(--accent-color);
+  position: absolute;
+  border-radius: 100%;
+  width: 9px;
+  height: 9px;
+  margin-left: 10px;
+  margin-top: 8px;
+  box-shadow: 0px 0px 4px 2px #FF0070;
+}
+
+.header__theme-menu-list {
+  text-align: end;
+  margin-top: 39px;
+  margin-right: 7px;
+}
+
+.header__theme-menu-item {
+  margin-bottom: 11px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 17px;
+  color: var(--nav-color);
+  border: transparent solid 1px;
+}
+
+.header__theme-menu-button:hover {
+  border-color: var(--nav-color);
+  
+}
+
+.header__theme-menu-item:focus {
+  outline: var(--nav-color);
+}
+
+.header__theme-menu-button {
+  text-transform: lowercase;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+
+.header__container {
+  margin-top: 70px; 
+}
+
+.header__container-title {
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 83%;
+  color: var(--header-logo-color);
+  text-shadow: 4px 4px 0 var(--header-logo-shadow);
+}
+
+.header__container-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0%;
+  color: #000028;
+  background-color: var(--accent-color);
+  margin-top: 52px;
+}
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: var(--main-bg-color);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main__content-section {
+  margin-top: 40px;
+}
+
+.main__content-section-duplicate{
+  margin-top: 50px;
+}
+
+.main__content-section-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: var(--nav-hover-color);
+}
+
+.main__links {
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.main__content-section-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: var(--main-subtitle-color);
+  background-color: var(--accent-color);
+  margin-top: 20px;
+}
+
+.main__content-section-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: var(--main-text-color);
+  margin-top: 10px;
+}
+
+.main__content-section-image {
+  margin-top: 25px;
+  gap: 10px;
+}
+
+.main__image-montain {
+  height: 142px;
+}
+
+.main__image-ice-cream{
+  height: 355px;
+}
+
+.main__image-cassette {
+  height: 237px;
+}
+
+.main__image-books {
+  height: 355px;
+}
+
+.main__image-street {
+  height: 237px;
+}
+
+.footer {
+  position: relative;
+  display: grid;
+  place-items: center;
+  block-size: 100vh; /* Fallback */
+  min-block-size: 668px;
+  padding: var(--main-gap);
+}
+
+.footer__title{
+  font-weight: 700;
+  font-size: 116px;
+  line-height: 83%;
+  text-shadow: 4px 4px 0 var(--footer-logo-shadow);
+  color: var(--footer-logo-color);
+  margin-top: 330px;
+  padding-bottom: 285px;
+}
+
+@media (width >= 768px) {
+  .header {
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+
+  .header__theme-menu {
+    margin-top: 145px;
+  }
+
+  .header__container {
+    margin-top: 176px;
+  }
+
+  .decorated-zone {
+    padding: 0 0 110px 10px;
+  }
+
+  .header__container-title {
+    
+  }
+
+  .header__container-subtitle {
+    max-width: 364px;
+    justify-self: end;
+    margin-top: 162px;
+    margin-bottom: 65px;
+  }
+
+  .main__content-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+
+  .main__content-section-title {
+    margin-left: 10px;
+    margin-top: 28px;
+    
+  }
+
+  .main__content-section-list {
+    
+  }
+
+  .main__content-section-subtitle {
+    
+  }
+
+  .main__content-section-text {
+    
+  }
+}
+
+@media (width >= 1024px) {
+  
 }
