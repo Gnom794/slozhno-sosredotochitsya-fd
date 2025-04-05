@@ -256,10 +256,6 @@
     padding-bottom: 85px;
   }
 
-  .decorated-zone {
-
-  }
-
   .decorated-zone::before {
     inset-inline-end: 20px;
   }
@@ -361,14 +357,6 @@
 }
 
 @media (width >= 1024px) {
-  .header {
-  
-  }
-  
-  .decorated-zone {
-  
-  }
-  
   .header__rec {
     position: absolute;
     right: 20px;
@@ -389,26 +377,6 @@
     line-height: 20px;
   }
   
-  .header__theme-menu-button {
-    
-  }
-  
-  .header__theme-menu-button_type_light {
-  
-  }
-  
-  .header__theme-menu-button_active {
-  
-  }
-  
-  .header__theme-menu-button_type_auto {
-  
-  }
-  
-  .header__theme-menu-button_type_dark {
-  
-  }
-  
   .header__container {
     margin-block-start: 261px;
     padding-block-end: 40px;
@@ -422,15 +390,6 @@
     max-width: 490px;
     margin-top: 113px;
   }
-
-  
-  .page {
-  
-  }
-  
-  .content {
-  
-  }
   
   .content-section {
     display: grid;
@@ -440,10 +399,6 @@
   
   .content-section__title {
     min-width: 305px;
-  }
-  
-  .text-blocks {
-  
   }
   
   .text-block {
@@ -458,10 +413,6 @@
     max-block-size: 24px;
   }
   
-  .text-block__content {
-  
-  }
-
   .causes .content-section__title {
     max-width: 260px;
   }
@@ -477,54 +428,9 @@
     column-gap: 20px;
   }
 
-  
-  .content-secrion {
-  
-  }
-  
-  .picture {
-  
-  }
-  
-  .text-title {
-  
-  }
-  
   .pictures__list {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 260px 315px 433px;
-  }
-  
-  .pictures__item {
-  
-  }
-  
-  .sunset {
-  
-  }
-  
-  .image {
-  
-  }
-  
-  .ice-cream {
-  
-  }
-  
-  .tape {
-  
-  }
-  
-  .books {
-  
-  }
-  
-  .street {
-  
-  }
-  
-  .footer {
-  
   }
   
   .decorated-zone-footer {

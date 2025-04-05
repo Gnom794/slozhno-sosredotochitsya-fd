@@ -9,10 +9,6 @@
     --main-font-family: IBM Plex mono;
 }
 
-.theme-dark .page {
-  
-}
-
 .theme-dark .decorated-zone::before {
   border-color: #FF0070;
   border-color: #FF0070;
