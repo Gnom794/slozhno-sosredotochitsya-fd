@@ -224,7 +224,7 @@
   margin-block-start: 40px;
 }
 
-.footer__title{
+.footer__title {
   display: flex;
   font-weight: 700;
   font-size: 116px;
@@ -292,7 +292,7 @@
     grid-template-columns: 235px 1fr;
     gap: 10px;
   }
-  .causes .content-section__title  {
+  .causes .content-section__title {
     max-width: 236px;
   }
 
@@ -349,7 +349,7 @@
     min-height: 985px;
     margin-inline-start: 10px;
   }
-  
+
   .footer {
     margin-block-start: 70px;
   }
