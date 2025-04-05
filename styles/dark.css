@@ -11,11 +11,9 @@
 
 .theme-dark .decorated-zone::before {
   border-color: #FF0070;
-  border-color: #FF0070;
 }
 
 .theme-dark .decorated-zone::after {
-  border-color: #FF0070;
   border-color: #FF0070;
 }
 

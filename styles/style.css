@@ -4,6 +4,10 @@
   padding: 10px 10px 65px 10px;
 }
 
+.page {
+  background-attachment: fixed
+}
+
 .decorated-zone {
   position: relative;
 }
