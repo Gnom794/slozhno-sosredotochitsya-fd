@@ -1,10 +1,14 @@
 :root {
+  --header-color: #FF0070;
+  --header-color-item: rgba(255, 0, 112, 0.4);
   --logo-color: #db00ff;
   --logo-shadow: #FF0070;
-  --main-text-color: #f1b2ce;
-  --focus-text-color: #ff0070;
+  --focus-bg-text-color: #FF0070;
+  --main-text-color: #F1B2CE;
+  --main-link-color: #F1B2CE;
+  --main-title-color: #FF0070;
   --main-subtitle-color: #000028;
-  --bg-image: url(../images/cover-image-dark.png);
   --main-bg-color: #000028;
   --main-font-family: IBM Plex mono;
+  --bg-image: url(../images/cover-image-dark.png);
 }
