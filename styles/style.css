@@ -4,13 +4,13 @@
   height: 100vh;
   padding: 0px 10px;
   min-height: 668px;
-  background-image: var(--bg-image);
-  background-position: center;
-  background-size: cover;
 }
 
 .page {
   background-attachment: fixed;
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
 }
 
 .decorated-zone {
@@ -68,18 +68,20 @@
   text-align: end;
   margin-top: 75px;
   display: grid;
-  margin-right: 7px;
   pointer-events: auto;
-  gap: 4px;
 }
 
 .header__theme-menu-button {
   margin-bottom: 11px;
   font-weight: 400;
   font-size: 18px;
-  line-height: 17px;
+  line-height: 22px;
+  min-width: 70px;
   color: var(--header-color);
   border: transparent solid 1px;
+  text-transform: lowercase;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .header__theme-menu-button:hover {
@@ -91,14 +93,8 @@
   outline: none;
 }
 
-.header__theme-menu-button {
-  text-transform: lowercase;
-  background-color: transparent;
-  border-color: transparent;
-}
-
 .header__theme-menu-button_active {
-  border: 0.5px solid var(--header-color);
+  border: 1px solid var(--header-color);
   pointer-events: none;
 }
 
@@ -127,8 +123,8 @@
 .content {
   display: grid;
   gap: 50px;
-  margin-top: 42px;
-  padding: 0 10px;
+  padding: 42px 10px 0px 10px;
+  background-color: var(--main-bg-color);
 }
 
 .causes .content-section__title {
@@ -241,6 +237,7 @@
   margin-block-start: 33px;
   height: 100vh;
   min-height: 668px;
+  background-color: var(--main-bg-color);
 }
 
 .footer__title {
@@ -257,8 +254,6 @@
 @media (width >= 768px) {
 
   .header {
-    height: 100vh;
-    min-height: 668px;
     padding: 20px;
   }
 
@@ -300,10 +295,9 @@
   }
 
   .content {
-    padding: 0 20px;
-    margin-top: 60px;
+    padding: 60px 20px 0px 20px;
     gap: 80px;
-  }
+    }
 
   .content-section {
     display: grid;
@@ -369,8 +363,6 @@
 
   .footer {
     margin-block-start: 50px;
-    height: 100vh;
-    min-height: 668px;
   }
 
   .footer__title {
@@ -380,10 +372,6 @@
 }
 
 @media (width >= 1024px) {
-  .header {
-  height: 100vh;
-  min-height: 668px;
-  }
 
   .header__rec {
     position: absolute;
@@ -398,13 +386,17 @@
     display: flex;
     justify-content: center;
     margin: 0;
-    gap: 20px;
+    gap: 9px;
   }
   
   .header__theme-menu-item {
     line-height: 20px;
   }
   
+  .header__theme-menu-button {
+    min-width: 70px;
+  }
+
   .header__container {
     margin-block-start: 261px;
     padding-block-end: 40px;
@@ -416,7 +408,7 @@
   }
   
   .content {
-    margin-top: 60px;
+    padding: 60px 20px 0px 20px;
   }
 
   .content-section {
@@ -463,8 +455,8 @@
 
   .footer {
     margin-block-start: 60px;
-}
-
+  }
+  
   .footer .footer__title {
     margin-block-start: 318px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
