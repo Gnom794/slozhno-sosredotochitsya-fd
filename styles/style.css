@@ -124,7 +124,6 @@
   display: grid;
   gap: 50px;
   padding: 42px 10px 40px 10px;
-  background-color: var(--main-bg-color);
 }
 
 .causes .content-section__title {
@@ -232,7 +231,6 @@
   display: grid;
   height: 100vh;
   min-height: 668px;
-  background-color: var(--main-bg-color);
 }
 
 .footer__title {
@@ -240,7 +238,7 @@
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
-  text-shadow: 4px 4px 0 var(--logo-shadow);
+  text-shadow: 2px 2px 0 var(--logo-shadow);
   color: var(--logo-color);
   justify-content: center;
   align-items: center;
@@ -324,6 +322,7 @@
   
   .picture .text-title {
     grid-column: 1 / -1;
+    background: var(--focus-bg-text-color);
   }
 
   .picture .image:nth-child(2) {
